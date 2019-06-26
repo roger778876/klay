@@ -1,0 +1,570 @@
+@font-face {
+  font-family: "Gill Sans";
+  src: url("fonts/GILbold.ttf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("images/bridge2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home-body {
+  margin: 0px 0px 20px 0px;
+}
+
+#container-home {
+  width: 960px;
+  height: 1360px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 10px 100px black;
+}
+
+#cover {
+  width: 960px;
+  height: 392px;
+}
+#cover img {
+  width: 100%;
+  height: 100%;
+}
+#cover-text {
+  width: 960px;
+  margin-top: 35px;
+  text-align: center;
+  font-family: "Roboto Black", Arial, Verdana;
+  font-weight: bold;
+  font-size: 16pt;
+  color: #243e90;
+  transform: scale(1.2, 1.5);
+}
+
+#home-nav {
+  width: 872px;
+  height: 372px;
+  margin: 40px 0px 0px 49px;
+}
+#home-nav div {
+  width: 209px;
+  height: 340px;
+  margin-right: 9px;
+  float: left;
+}
+#home-nav div img {
+  width: 209px;
+  height: 340px;
+}
+#home-career:hover img {
+  content: url("images/home-career-d.jpg");
+}
+#home-childhood:hover img {
+  content: url("images/home-childhood-d.jpg");
+}
+#home-family:hover img {
+  content: url("images/home-family-d.jpg");
+}
+#home-highlights:hover img {
+  content: url("images/home-highlights-d.jpg");
+}
+#home-nav div:hover img + .home-nav-text {
+  color: #ffcd34;
+}
+#home-nav div:hover {
+  cursor: pointer;
+}
+.home-nav-text {
+  width: 209px;
+  margin-top: -7px;
+  float: left;
+  text-align: center;
+  font-family: "Roboto Black", Arial, Verdana;
+  font-weight: bold;
+  font-size: 32px;
+  color: #243e90;
+  transform: scale(1, 1.2);
+}
+
+#contact {
+  width: 960px;
+  height: 270px;
+  margin-top: 80px;
+  background-color: #e4e4e4;
+}
+#contact-arrow {
+  width: 192px;
+  height: 114px;
+  padding-top: 150px;
+  margin-left: 100px;
+  float: left;
+}
+#contact-arrow img {
+  width: 192px;
+  height: 114px;
+}
+#contact-center {
+  width: 400px;
+  height: 270px;
+  margin-top: 10px;
+  float: left;
+  margin-left: -12px;
+}
+#contact #contact-title {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Roboto Black", Arial, Verdana;
+  font-weight: bold;
+  font-size: 40px;
+  color: #243e90;
+  transform: scale(0.8, 1);
+}
+#contact #forms {
+  width: 300px;
+  margin: auto;
+}
+#contact #forms .reg {
+  width: 286px;
+  padding: 5px 5px;
+  margin: 3px 0px;
+  font-family: "Roboto Black", Arial, Verdana;
+  transform: scale(1, 1.2);
+  border: 3px solid #1d316f; /* or #e4e4e4 */
+  background-color: #243e90;
+  color: #ffcd34;
+}
+#contact #forms .reg::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+#contact #forms .reg:focus {
+  border: 3px solid #ffcd34;
+  outline: none;
+  background-color: white;
+}
+#contact #forms .reg:focus::placeholder {
+  color: #e4e4e4;
+}
+#contact #forms .submit {
+  width: 302px;
+  padding: 5px 5px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-family: "Roboto Black", Arial, Verdana;
+  font-weight: bold;
+  font-style: normal;
+  transform: scale(1, 1.2);
+  background-color: #243e90;
+  color: white;
+  border: 2px solid #243e90;
+}
+#contact #forms .submit:hover {
+  color: #ffcd34;
+  background-color: white;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  border: 2px solid #ffcd34;
+}
+#contact #forms .submit:active {
+  outline: 0;
+  border: 2px solid #e4e4e4;
+}
+#contact #forms .submit:focus { /* after click */
+  outline: 0;
+}
+
+#footer {
+  width: 860px;
+  height: 110px;
+  background-color: #243e90;
+  padding: 20px 50px;
+}
+#icons {
+  width: 175px;
+  height: 50px;
+  float: left;
+}
+#icons img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+#icons img:hover {
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
+  -webkit-transition: filter 0.15s;
+  transition: filter 0.15s;
+}
+#signature {
+  width: 165px;
+  height: 50px;
+  margin-top: 11px;
+  float: left;
+  clear: left;
+}
+#signature img {
+  width: 100%;
+  height: 100%;
+}
+#copyright {
+  width: 186px;
+  height: 20px;
+  padding-top: 45px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", Arial, Verdana;
+  background-color: #243e90;
+  color: white;
+}
+#footer #kt {
+  width: 85px;
+  height: 55px;
+  margin-top: 29px;
+  float: right;
+}
+#footer #kt img {
+  width: 100%;
+  height: 100%;
+}
+
+/****************/
+/* SUBPAGES CSS */
+/****************/
+
+#container-career {
+  width: 960px;
+  height: 1220px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 100px black;
+}
+#container-childhood {
+  width: 960px;
+  height: 1100px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 100px black;
+}
+#container-family {
+  width: 960px;
+  height: 1605px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 100px black;
+}
+#container-highlights {
+  width: 960px;
+  height: 1250px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 100px black;
+}
+.footer-sub {
+  width: 960px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #243e90;
+  color: #243e90;
+  float: left;
+  clear: left;
+}
+
+#nav {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: #243e90;
+  position: fixed;
+}
+#nav #nav-klay {
+  width: 200px;
+  height: 64px;
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Gill Sans", Arial, Verdana;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  transform: scale(0.9, 1.1);
+  line-height: 100%;
+}
+#nav #nav-klay a:link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+#nav #nav-klay a:hover {
+  color: #ffffff;
+}
+#nav #nav-klay a:visited {
+  font-size: 32px;
+  color: white;
+}
+#nav #nav-klay a:active {
+  text-align: left;
+}
+#nav #nav-links {
+  width: 200px;
+  height: 248px;
+  margin-top: 20px;
+  padding: 0px;
+  background-color: #1d316f;
+}
+#nav #nav-links td {
+  width: 200px;
+  height: 62px;
+  text-align: left;
+  font-family: "Gill Sans", Arial, Verdana;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  transform: scale(0.9, 1.1);
+}
+#nav #nav-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+#nav #nav-links tr:hover {
+  background-color: #ffcd34;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.15s;
+}
+#nav #nav-pic {
+  width: 190px;
+  height: 312px;
+  background-color: #1d316f;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+#nav #nav-pic img {
+  width: 180px;
+  height: 293px;
+}
+#nav #icons {
+  margin-top: 20px;
+  margin-left: 17px;
+}
+#nav #icons img {
+  margin-right: 4px;
+}
+#nav #signature {
+  margin-left: 19px;
+}
+#nav #copyright {
+  padding-top: 150px;
+}
+
+#content-sub {
+  width: 760px;
+  float: right;
+}
+#content-family, #content-highlights {
+  width: 710px;
+  padding: 0px 25px;
+  float: right;
+}
+h1 {
+  width: 710px;
+  margin: auto;
+  text-align: center;
+  font-family: "Gill Sans", Arial, Verdana;
+  font-weight: bold;
+  font-size: 90px;
+  color: #243e90;
+  transform: scale(1, 1);
+}
+#oracle {
+  width: 710px;
+  height: 255px;
+  padding-top: 7px;
+  margin: auto;
+}
+#oracle img {
+  width: 710px;
+  height: 248px;
+}
+.textbox1 {
+  width: 450px;
+  margin: 6px 0px 0px 25px;
+  float: left;
+  font-family: "Roboto", Arial, Verdana;
+  font-size: 1em;
+}
+#jersey {
+  width: 220px;
+  height: 244px;
+  float: left;
+  margin: 13px 0px 0px 20px;
+}
+#jersey img {
+  width: 100%;
+  height: 100%;
+}
+#splash {
+  width: 300px;
+  height: 200px;
+  margin: 20px 0px 0px 25px;
+  float: left;
+}
+#splash img {
+  width: 300px;
+  height: 200px;
+}
+.textbox2 {
+  width: 400px;
+  margin: 23px 0px 0px 10px;
+  float: left;
+  font-family: "Roboto", Arial, Verdana;
+  font-size: 1em;
+}
+h2, h3 {
+  width: 710px;
+  margin-top: 40px;
+  float: left;
+  clear: left;
+  text-align: center;
+  font-family: "Gill Sans", Arial, Verdana;
+  font-weight: bold;
+  font-size: 40px;
+  color: #243e90;
+}
+#nba-stats, #wsu-stats {
+  width: 712px;
+  margin: auto;
+  border-collapse: collapse;
+}
+#nba-stats caption, #wsu-stats caption {
+  color: white;
+}
+#nba-stats tr:nth-child(odd) {
+  background-color: #ffedb7;
+}
+#nba-stats th, #nba-stats td, #wsu-stats th, #wsu-stats td {
+  padding: 5px 0px;
+  border: 1px solid #d6d6d6;
+}
+#nba-stats th, #wsu-stats th {
+  text-align: center;
+  font-family: "Gill Sans", Arial, Verdana;
+  font-weight: bold;
+  font-size: 15px;
+  color: #243e90;
+  transform: scale(1, 1.1);
+  background-color: #ffcd34;
+}
+#nba-stats td, #wsu-stats td {
+  text-align: center;
+  font-family: "Roboto", Arial, Verdana;
+  font-size: 15px;
+  color: #243e90;
+}
+
+#timeline {
+  width: 659px;
+  height: 673px;
+  padding-top: 30px;
+  margin: auto;
+}
+#wsu-stats th {
+  background-color: #981e32;
+  color: white;
+}
+#wsu-stats td {
+  color: black;
+}
+#wsu-stats tr:nth-child(odd) {
+  background-color: #f5c6ce;
+}
+
+#family-full {
+  width: 710px;
+  height: 312px;
+  margin: auto;
+}
+#family-full img {
+  width: 710px;
+  height: 312px;
+}
+.family-pair, .family-rocco {
+  width: 710px;
+  height: 182px;
+  margin-top: 20px;
+  float: left;
+  clear: left;
+}
+.family-img {
+  width: 262px;
+  height: 182px;
+  float: left;
+}
+.family-img img {
+  width: 262px;
+  height: 182px;
+}
+.family-text, .family-text-s {
+  width: 430px;
+  float: left;
+  font-family: "Roboto", Arial, Verdana;
+  font-size: 1em;
+}
+.separation {
+  width: 18px;
+  float: left;
+  color: white;
+}
+.family-rocco {
+  height: 283px;
+}
+.family-img-s {
+  width: 243px;
+  height: 181px;
+  float: left;
+}
+.family-img-s img {
+  width: 243px;
+  height: 181px;
+}
+.family-text-s {
+  width: 243px;
+  float: left;
+  clear: left;
+}
+.family-video {
+  width: 457;
+  height: 283px;
+  float: right;
+}
+
+.small {
+  margin-top: 20px;
+}
+.video-pair {
+  width: 710px;
+  height: 259px;
+  margin-top: 20px;
+  float: left;
+}
+.video-pair .video {
+  width: 460px;
+  height: 259px;
+  float: left;
+}
+.video-pair .video-text {
+  width: 214px;
+  float: right;
+  font-family: "Roboto", Arial, Verdana;
+  font-size: 1.3em;
+}
+.video-text li {
+  margin-bottom: 5px;
+}
